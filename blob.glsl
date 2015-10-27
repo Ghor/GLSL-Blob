@@ -4,7 +4,7 @@
 // This is not a standalone fragment shader, just a function you can include in your own fragment shader to calculate cool blob shapes.
 
 // Arguments //
-// texture_coords: What point on the blob's rectangle you want to sample from.
+// texture_coords: What point on the blob's rectangle you want to sample from. Takes 0..1, not -1..1 or -0.5..0.5.
 // endpoint_roundness: Higher values make the endpoints of the spine wider, lower values make the endpoints thinner.
 // midpoint_roundness: Higher values expand the shape toward the endpoints of the spine, lower values contract the shape toward the center of mass and make it sharper.
 // vertebra_bias: 1.0 is the middle of the spine. Higher values move the center of mass upward, and lower values move the center of mass downward.
